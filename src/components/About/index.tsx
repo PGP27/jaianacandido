@@ -8,7 +8,7 @@ import Service from './components/Service';
 
 const About = () => (
   <section>
-    <div className="w-full flex flex-col justify-center items-center pt-20 pb-12 lg:flex-row">
+    <div className="w-full flex flex-col items-center justify-center pt-20 lg:flex-row">
       <div className="flex items-center lg:mr-20">
         <img
           src={jaiana}
@@ -29,8 +29,8 @@ const About = () => (
       </div>
     </div>
     <div className="flex flex-col items-center pb-12">
-      <h2 className="simple-services-title text-3xl text-center py-12 underline underline-offset-8">Público atendido</h2>
-      <div className="w-full flex flex-col sm:grid sm:grid-cols-2 2xl:grid-cols-4 lg:w-4/5">
+      <h2 className="text-2xl py-12 underline underline-offset-4">Público atendido</h2>
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
         <Service
           img={adolescentes}
           text="Adolescentes"
