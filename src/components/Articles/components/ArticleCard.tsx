@@ -15,7 +15,7 @@ const ArticleCard = ({ icon, title, link }: any) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Ver artigo completo
+            Ver mais
           </a>
         </div>
       </div>

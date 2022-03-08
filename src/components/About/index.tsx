@@ -19,12 +19,13 @@ const About = () => (
       <div className="pt-20 px-8 flex flex-col justify-center sm:px-20 lg:w-1/2 lg:p-0">
         <h2 className="mb-8 text-2xl">Olá, é um prazer conhecer você!</h2>
         <p className="text-justify leading-7">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-          when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-          It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-          and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          Psicóloga pela Universidade de Fortaleza (UNIFOR). Mestranda em Psicologia pela Universidade de Fortaleza (UNIFOR).
+          Membro integrante do Laboratório de Estudos e Práticas em Psicologia e Saúde (LEPP-Saúde),
+          filiado ao Programa de Pós-Graduação em Psicologia da Universidade de Fortaleza.
+          Bolsista de Iniciação Científica FEQ (Fundação Edson Queiroz) - (Dezembro de 2019 a Dezembro de 2020).
+          Bolsista de Pós-Graduação FUNCAP - Mestrado (Agosto de 2021 - presente).
+          Temáticas de estudo e atuação: Suicídio, Saúde Mental, Plantão Psicológico, Psicoterapia Breve-Focal,
+          Gestalt-Terapia, Psicologia da Dor, Psicologia da Saúde e Gerontologia.
         </p>
       </div>
     </div>
