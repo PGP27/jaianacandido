@@ -1,15 +1,18 @@
-import Welcome from './components/Welcome';
-import About from './components/About';
-import Locations from './components/Locations';
-import Articles from './components/Articles';
 
-const App = () => (
-  <div>
-    <Welcome />
-    <About />
-    <Locations />
-    <Articles />
-  </div>
-);
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Header from './components/Header';
+import Home from './pages/Home';
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
 export default App;
