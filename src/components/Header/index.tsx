@@ -27,13 +27,13 @@ const Header = () => (
       <NavBar
         cNavBar="hidden lg:block"
         cList="flex"
-        cButton="mx-4 hover:text-emerald-700"
+        cButton="mx-4 font-medium hover:text-emerald-700 transition"
       />
     </header>
     <NavBar
       cNavBar="mobile-menu bg-slate-50 border-b absolute z-0 w-full top-[96px] left-0 transform -translate-y-full transition duration-300 ease-in-out lg:hidden"
       cList="flex flex-col items-center"
-      cButton="w-full p-4 text-lg hover:text-emerald-700"
+      cButton="w-full p-4 text-lg hover:text-emerald-700 transition"
     />
   </div>
 );
