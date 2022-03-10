@@ -1,10 +1,11 @@
 import jaiana from '../assets/jaiana.jpeg';
+import Audience from '../components/Audience';
 
 const Home = () => (
   <div>
-    <div className="w-full flex justify-center bg-slate-100">
+    <div className="w-full flex justify-center bg-gradient-to-br from-slate-100 to-sky-100">
       <div className="w-full lg:w-[1536px] px-6 lg:px-12 flex flex-col lg:flex-row items-center justify-between">
-        <div className="flex flex-col items-start justify-between py-20">
+        <div className="flex flex-col items-start justify-between pt-20 lg:pb-20">
           <div className="font-medium">
             <p className="text-4xl sm:text-5xl">Olá! <span className="text-red-400">Sou Jaiana Cândido.</span></p>
             <p className="mt-4 text-3xl sm:text-5xl">Psicóloga clínica.</p>
@@ -15,12 +16,12 @@ const Home = () => (
             href="https://www.instagram.com/psi.jaianacandido/"
             target="_blank"
             rel="noreferrer"
-            className="hidden lg:flex opacity-75 hover:text-red-400 transition"
+            className="hidden lg:flex opacity-75 hover:text-purple-800 transition"
           >
             INSTAGRAM
           </a>
         </div>
-        <div className="h-full flex-1 flex flex-col items-center justify-center">
+        <div className="h-full mb-20 lg:mb-0 flex-1 flex flex-col items-center justify-center">
           <img src={jaiana} alt="Jaiana Cândido" className="relative z-10 shadow-md w-[400px] rounded-full" />
           <div className="hidden absolute z-20 h-[400px] xl:w-[600px] xl:flex flex-col justify-between">
             <div className="h-16 w-16 rounded-full bg-purple-300 self-end" />
@@ -32,6 +33,7 @@ const Home = () => (
         </div>
       </div>
     </div>
+    <Audience />
   </div>
 );
 
