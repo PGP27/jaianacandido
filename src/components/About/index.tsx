@@ -7,7 +7,7 @@ import SessionTitle from '../SessionTitle';
 const About = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center bg-white">
-      <SessionTitle title="Sobre mim" bgColor="bg-white" />
+      <SessionTitle title="Sobre mim" bgColor="bg-white" lineColor='bg-[#111155]' />
       <div className="my-10 w-full max-w-[1536px] flex items-center">
         <div className="flex-1">
           <div className="flex items-center mb-4">
@@ -21,7 +21,6 @@ const About = () => {
               <p className="my-2">Psicóloga clínica</p>
             </div>
           </div>
-          <p className="text-lg font-medium p-2">Olá, é um prazer conhecer você!</p>
           <div className="text-justify p-2">
             <p className="my-3">
               Psicóloga pela Universidade de Fortaleza (UNIFOR). Mestranda em Psicologia pela Universidade de Fortaleza (UNIFOR).
@@ -39,13 +38,13 @@ const About = () => {
           <div className="w-full pl-28">
             <Form
               onSubmit={() => {}}
-              className="w-full flex flex-col p-6 rounded-lg shadow-md border border-slate-400 bg-slate-100"
+              className="w-full flex flex-col p-6 rounded-lg shadow-lg bg-red-200"
             >
               <h2 className="mt-2 mb-8 text-center text-2xl font-medium">Mande sua mensagem!</h2>
               <InputForm type="text" name="name" placeholder="Nome" />
               <InputForm type="text" name="email" placeholder="Email" />
               <InputForm type="textarea" name="message" placeholder="Mensagem..." />
-              <button type="submit" className="my-2 py-1 px-4 rounded-full text-lg text-white transition bg-blue-900 hover:opacity-80">Enviar</button>
+              <button type="submit" className="my-2 py-2 px-4 rounded-full font-medium text-lg text-white transition bg-[#111155] hover:opacity-80">Enviar</button>
             </Form>
           </div>
         </div>
