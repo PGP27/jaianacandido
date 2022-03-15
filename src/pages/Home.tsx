@@ -1,5 +1,6 @@
 import jaiana from '../assets/jaiana.jpeg';
 import Audience from '../components/Audience';
+import About from '../components/About';
 
 const Home = () => (
   <div>
@@ -33,7 +34,8 @@ const Home = () => (
         </div>
       </div>
     </div>
-    <Audience />
+    {/* <Audience /> */}
+    <About />
   </div>
 );
 
