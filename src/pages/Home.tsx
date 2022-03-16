@@ -35,8 +35,8 @@ const Home = () => (
         </div>
       </div>
     </div>
-    {/* <Audience /> */}
     <Locations />
+    {/* <Audience /> */}
     <About />
   </div>
 );

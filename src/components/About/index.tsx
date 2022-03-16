@@ -16,12 +16,12 @@ const About = () => (
             className="h-32 w-32 rounded-full shadow-md"
           />
           <div className="ml-4">
-            <p className="text-2xl my-2">Jaiana Cândido</p>
-            <p className="my-2">Psicóloga clínica</p>
+            <p className="text-2xl font-medium my-2">Jaiana Cândido</p>
+            <p className="my-2 text-purple-900">Psicóloga clínica</p>
           </div>
         </div>
         <div className="text-justify p-2">
-          <p className="my-3">
+          <p className="my-3 font-medium">
             Psicóloga pela Universidade de Fortaleza (UNIFOR). Mestranda em Psicologia pela Universidade de Fortaleza (UNIFOR).
             Membro integrante do Laboratório de Estudos e Práticas em Psicologia e Saúde (LEPP-Saúde),
             filiado ao Programa de Pós-Graduação em Psicologia da Universidade de Fortaleza.
@@ -30,8 +30,11 @@ const About = () => (
             Bolsista de Iniciação Científica FEQ (Fundação Edson Queiroz) - (Dezembro de 2019 a Dezembro de 2020).
             Bolsista de Pós-Graduação FUNCAP - Mestrado (Agosto de 2021 - presente).
           </p>
+          <p className="my-3">
+            <strong>Temáticas de estudo e atuação:</strong> Suicídio, Saúde Mental, Plantão Psicológico, Psicoterapia Breve-Focal,
+            Gestalt-Terapia, Psicologia da Dor, Psicologia da Saúde e Gerontologia.
+          </p>
         </div>
-        <Link to="/sobre-mim" className="p-2 underline underline-offset-1 transition hover:text-blue-800">Ler mais</Link>
       </div>
       <div className="flex-1 flex justify-center items-center">
         <div className="w-full pl-28">

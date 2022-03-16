@@ -1,32 +1,19 @@
-import { GoogleMap, withScriptjs, withGoogleMap } from 'react-google-maps';
-
 interface LocationCardProps {
   image: string,
   title: string,
   desc: string,
-  color: string,
+  mapURL?: string,
 };
 
-const Map = () => <GoogleMap defaultZoom={10} defaultCenter={{lat: 12, lng: 12}} />;
-
-const WrappedMap = withScriptjs(withGoogleMap(Map));
-
-const LocationCard = ({ image, title, desc, color }: LocationCardProps) => (
-  <div className="flex items-center my-10">
-    <div className="w-[600px]">
-      <WrappedMap
-        googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
-        loadingElement={<div style={{ height: `100%` }} />}
-        containerElement={<div style={{ height: `300px` }} />}
-        mapElement={<div style={{ height: `100%` }} />}
-      />
-    </div>
-    <div className="ml-10">
-      <img src={image} alt={title} className="h-28 w-28 my-10" />
-      <div className="flex flex-col my-10">
-        <p className="my-2 text-lg font-medium">{title}</p>
-        <p className="my-2">{desc}</p>
-      </div>
+const LocationCard = ({ image, title, desc, mapURL }: LocationCardProps) => (
+  <div className="max-w-[400px] mx-10 flex flex-col items-center bg-slate-50 shadow-lg border rounded-lg py-4 px-8">
+    <p className="h-20 text-lg text-center font-medium">{title}</p>
+    <div className="h-full flex flex-col">
+      <img src={image} alt={title} className="h-28 self-center my-8" />
+      <p className="h-24">{desc}</p>
+      {mapURL && (
+        <a className="underline underline-offset-2 hover:text-blue-800 transition" rel="noreferrer" href={mapURL} target="_blank">Ver no mapa</a>
+      )}
     </div>
   </div>
 );
