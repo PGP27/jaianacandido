@@ -3,29 +3,43 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { EffectCards, EffectFade, Navigation, Pagination } from 'swiper';
-import "./styles.css";
+import { EffectCoverflow, Navigation, Pagination } from 'swiper';
+import Slide from './components/Slide';
 
 const Publications = () => (
-  <Swiper
-    effect={"cards"}
-    navigation={true}
-    pagination={{
-      clickable: true,
-    }}
-    modules={[EffectCards, Navigation, Pagination]}
-    className="h-80 w-80 mySwiper"
-  >
-    <SwiperSlide className="">Slide 1</SwiperSlide>
-    <SwiperSlide className="">Slide 2</SwiperSlide>
-    <SwiperSlide className="">Slide 3</SwiperSlide>
-    <SwiperSlide className="">Slide 4</SwiperSlide>
-    <SwiperSlide className="">Slide 5</SwiperSlide>
-    <SwiperSlide className="">Slide 6</SwiperSlide>
-    <SwiperSlide className="">Slide 7</SwiperSlide>
-    <SwiperSlide className="">Slide 8</SwiperSlide>
-    <SwiperSlide className="">Slide 9</SwiperSlide>
-  </Swiper>
+  <div>
+    <Swiper
+      effect={"coverflow"}
+      navigation={true}
+      pagination={{
+        clickable: true,
+      }}
+      coverflowEffect={{
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      }}
+      slidesPerView={3}
+        centeredSlides
+        style={{ height: "500px" }}
+      modules={[EffectCoverflow, Navigation, Pagination]}
+      className="h-[400px] w-[1400px]"
+    >
+      <SwiperSlide className="bg-red-100"></SwiperSlide>
+      <SwiperSlide className="bg-red-200"></SwiperSlide>
+      <SwiperSlide className="bg-red-300"></SwiperSlide>
+      <SwiperSlide className="bg-red-400"></SwiperSlide>
+      <SwiperSlide className="bg-red-500"></SwiperSlide>
+      {/* <SwiperSlide><Slide image="bg-red-100" title="" desc="" link="" /></SwiperSlide>
+      <SwiperSlide><Slide image="bg-red-200" title="" desc="" link="" /></SwiperSlide>
+      <SwiperSlide><Slide image="bg-red-300" title="" desc="" link="" /></SwiperSlide>
+      <SwiperSlide><Slide image="bg-red-400" title="" desc="" link="" /></SwiperSlide>
+      <SwiperSlide><Slide image="bg-red-500" title="" desc="" link="" /></SwiperSlide>
+      <SwiperSlide><Slide image="bg-red-600" title="" desc="" link="" /></SwiperSlide> */}
+    </Swiper>
+  </div>
 );
 
 export default Publications;

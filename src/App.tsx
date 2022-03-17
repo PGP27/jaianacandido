@@ -1,7 +1,6 @@
 import jaiana from './assets/jaiana.jpeg';
 
 import Header from './components/Header';
-import Audience from './components/Audience';
 import About from './components/About';
 import Locations from './components/Locations';
 import Publications from './components/Publications';
@@ -40,7 +39,6 @@ const App = () => (
       </div>
     </div>
     <Locations />
-    {/* <Audience /> */}
     <About />
     {/* <Publications /> */}
   </div>
