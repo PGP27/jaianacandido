@@ -67,7 +67,3 @@ html, body, #root {
 	align-items: center;
 	width: 100%;
 }
-
-a, p, strong, h1, h2, h3 {
-  font-family: 'Fredoka', sans-serif;
-}

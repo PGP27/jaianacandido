@@ -1,5 +1,4 @@
 import { Form } from '@unform/web';
-import { Link } from 'react-router-dom';
 import jaiana from '../../assets/jaiana.jpeg';
 import InputForm from '../InputForm';
 import SessionTitle from '../SessionTitle';
@@ -7,21 +6,21 @@ import SessionTitle from '../SessionTitle';
 const About = () => (
   <div className="w-full flex flex-col items-center justify-center bg-slate-100">
     <SessionTitle title="Sobre mim" bgColor="bg-slate-100" lineColor='bg-[#111155]' />
-    <div className="my-10 w-full max-w-[1536px] flex items-center">
+    <div className="my-10 px-4 sm:px-10 w-full max-w-[1536px] flex flex-col lg:flex-row items-center">
       <div className="flex-1">
-        <div className="flex items-center mb-4">
+        <div className="flex items-center justify-center lg:justify-start mb-4">
           <img
             src={jaiana}
             alt="Jaiana Cândido"
             className="h-32 w-32 rounded-full shadow-md"
           />
           <div className="ml-4">
-            <p className="text-2xl font-medium my-2">Jaiana Cândido</p>
+            <p className="text-2xl my-2">Jaiana Cândido</p>
             <p className="my-2 text-purple-900">Psicóloga clínica</p>
           </div>
         </div>
         <div className="text-justify p-2">
-          <p className="my-3 font-medium">
+          <p className="my-3">
             Psicóloga pela Universidade de Fortaleza (UNIFOR). Mestranda em Psicologia pela Universidade de Fortaleza (UNIFOR).
             Membro integrante do Laboratório de Estudos e Práticas em Psicologia e Saúde (LEPP-Saúde),
             filiado ao Programa de Pós-Graduação em Psicologia da Universidade de Fortaleza.
@@ -36,17 +35,17 @@ const About = () => (
           </p>
         </div>
       </div>
-      <div className="flex-1 flex justify-center items-center">
-        <div className="w-full pl-28">
+      <div className="mt-16 w-full flex-1 flex justify-center items-center">
+        <div className="w-full lg:pl-28">
           <Form
             onSubmit={() => {}}
             className="w-full flex flex-col p-6 rounded-lg shadow-lg bg-red-200"
           >
-            <h2 className="mt-2 mb-8 text-center text-2xl font-medium">Mande sua mensagem!</h2>
+            <h2 className="mt-2 mb-8 text-center text-2xl">Mande sua mensagem!</h2>
             <InputForm type="text" name="name" placeholder="Nome" />
             <InputForm type="text" name="email" placeholder="Email" />
             <InputForm type="textarea" name="message" placeholder="Mensagem..." />
-            <button type="submit" className="my-2 py-2 px-4 rounded-full font-medium text-lg text-white transition bg-[#111155] hover:opacity-80">Enviar</button>
+            <button type="submit" className="my-2 py-2 px-4 rounded-full text-lg text-white transition bg-[#111155] hover:opacity-80">Enviar</button>
           </Form>
         </div>
       </div>

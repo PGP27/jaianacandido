@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
 import logo from '../../assets/logo.png';
@@ -7,12 +6,10 @@ import NavBar from './components/NavBar';
 const Header = () => (
   <div>
     <header className="relative z-10 bg-white flex items-center justify-between py-6 px-4 shadow-md lg:px-12">
-      <Link to="/">
-        <div className="flex items-center">
-          <img src={logo} alt="Logo" className="h-12" />
-          <h1 className="hidden sm:block text-2xl ml-4">Jaiana Cândido</h1>
-        </div>
-      </Link>
+      <div className="flex items-center">
+        <img src={logo} alt="Logo" className="h-12" />
+        <h1 className="hidden sm:block text-2xl ml-4">Jaiana Cândido</h1>
+      </div>
       <button
         type="button"
         aria-label="menu"
@@ -27,7 +24,7 @@ const Header = () => (
       <NavBar
         cNavBar="hidden lg:block"
         cList="flex"
-        cButton="mx-4 font-medium hover:text-emerald-700 transition"
+        cButton="mx-4 hover:text-emerald-700 transition"
       />
     </header>
     <NavBar
