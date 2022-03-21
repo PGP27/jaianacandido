@@ -4,9 +4,9 @@ import InputForm from '../InputForm';
 import SessionTitle from '../SessionTitle';
 
 const About = () => (
-  <div className="w-full flex flex-col items-center justify-center bg-slate-100">
-    <SessionTitle title="Sobre mim" bgColor="bg-slate-100" lineColor='bg-[#111155]' />
-    <div className="my-10 px-4 sm:px-10 w-full max-w-[1536px] flex flex-col lg:flex-row items-center">
+  <div className="w-full flex flex-col items-center justify-center bg-gray-100">
+    <SessionTitle title="Sobre mim" bgColor="bg-gray-100" lineColor='bg-[#111155]' />
+    <div className="my-10 pb-10 px-4 sm:px-10 w-full max-w-[1536px] flex flex-col lg:flex-row items-center">
       <div className="flex-1">
         <div className="flex items-center justify-center lg:justify-start mb-4">
           <img
@@ -16,7 +16,7 @@ const About = () => (
           />
           <div className="ml-4">
             <p className="text-2xl my-2">Jaiana Cândido</p>
-            <p className="my-2 text-purple-900">Psicóloga clínica</p>
+            <p className="my-2">Psicóloga clínica</p>
           </div>
         </div>
         <div className="text-justify p-2">
@@ -39,13 +39,13 @@ const About = () => (
         <div className="w-full lg:pl-28">
           <Form
             onSubmit={() => {}}
-            className="w-full flex flex-col p-6 rounded-lg shadow-lg bg-red-200"
+            className="w-full flex flex-col p-6 rounded-lg shadow-lg bg-orange-200"
           >
             <h2 className="mt-2 mb-8 text-center text-2xl">Mande sua mensagem!</h2>
             <InputForm type="text" name="name" placeholder="Nome" />
             <InputForm type="text" name="email" placeholder="Email" />
             <InputForm type="textarea" name="message" placeholder="Mensagem..." />
-            <button type="submit" className="my-2 py-2 px-4 rounded-full text-lg text-white transition bg-[#111155] hover:opacity-80">Enviar</button>
+            <button type="submit" className="my-2 py-2 px-4 rounded-full text-lg text-white transition bg-[#111155] hover:bg-[#333377]">Enviar</button>
           </Form>
         </div>
       </div>

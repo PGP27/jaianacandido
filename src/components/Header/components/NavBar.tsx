@@ -14,9 +14,6 @@ const NavBar = ({ cNavBar, cList, cButton }: NavBarProps) => (
           <button type="button" className={cButton}>Sobre</button>
         </li>
         <li>
-          <button type="button" className={cButton}>Serviços</button>
-        </li>
-        <li>
           <button type="button" className={cButton}>Consultórios</button>
         </li>
         <li>

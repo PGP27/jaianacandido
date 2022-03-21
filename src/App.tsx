@@ -8,7 +8,7 @@ import Publications from './components/Publications';
 const App = () => (
   <div className="font-default text-base">
     <Header />
-    <div className="w-full flex justify-center bg-gradient-to-br from-slate-50 to-sky-50">
+    <div className="w-full py-10 flex justify-center bg-gradient-to-br from-slate-50 to-sky-50">
       <div className="w-full lg:w-[1536px] px-6 lg:px-12 flex flex-col lg:flex-row items-center justify-between">
         <div className="flex flex-col items-start justify-between pt-20 lg:pb-8">
           <div>
@@ -17,14 +17,24 @@ const App = () => (
             <p className="mt-12">Gestalt-terapia & dor.</p>
           </div>
           <button type="button" className="my-12 self-center lg:self-auto bg-emerald-700 text-white text-lg shadow-md rounded-full py-4 px-10 hover:opacity-75 transition">Agende sua sessão!</button>
-          <a
-            href="https://www.instagram.com/psi.jaianacandido/"
-            target="_blank"
-            rel="noreferrer"
-            className="hidden lg:flex opacity-75 hover:text-purple-800 transition"
-          >
-            INSTAGRAM
-          </a>
+          <div className="flex">
+            <a
+              href="https://www.instagram.com/psi.jaianacandido"
+              target="_blank"
+              rel="noreferrer"
+              className="hidden lg:flex opacity-75 hover:text-orange-700 transition"
+            >
+              INSTAGRAM
+            </a>
+            <a
+              href="http://lattes.cnpq.br/1265173687714514"
+              target="_blank"
+              rel="noreferrer"
+              className="hidden ml-8 lg:flex opacity-75 hover:text-blue-800 transition"
+            >
+              LATTES
+            </a>
+          </div>
         </div>
         <div className="h-full mb-20 lg:mb-0 flex-1 flex flex-col items-center justify-center">
           <img src={jaiana} alt="Jaiana Cândido" className="relative z-10 shadow-md w-[400px] rounded-full" />

@@ -1,0 +1,8 @@
+.swiper-button-prev, .swiper-button-next {
+  color: black;
+}
+
+.swiper-pagination-bullet, .swiper-pagination-bullet-active {
+  background-color: black;
+  padding: 5px;
+}
