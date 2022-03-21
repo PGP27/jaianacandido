@@ -1,7 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { useField } from '@unform/core';
 
-const InputForm = ({ type, name, placeholder }: any) => {
+interface InputFormProps {
+  type: string,
+  name: string,
+  placeholder: string,
+};
+
+const InputForm = ({ type, name, placeholder }: InputFormProps) => {
   const inputRef = useRef(null);
   const { fieldName, defaultValue, registerField } = useField(name);
 
@@ -21,12 +27,13 @@ const InputForm = ({ type, name, placeholder }: any) => {
     })
   }, [fieldName, registerField]);
 
-  if (type === 'text') {
+  if (type !== 'textarea') {
     return (
       <input
         id={name}
         name={name}
-        type="text"
+        type={type}
+        required
         ref={inputRef}
         defaultValue={defaultValue}
         placeholder={placeholder}
@@ -40,6 +47,7 @@ const InputForm = ({ type, name, placeholder }: any) => {
       <textarea
         id={name}
         name={name}
+        required
         ref={inputRef}
         defaultValue={defaultValue}
         placeholder={placeholder}

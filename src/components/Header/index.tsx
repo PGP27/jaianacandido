@@ -1,5 +1,4 @@
 import { GiHamburgerMenu } from 'react-icons/gi';
-
 import logo from '../../assets/logo.png';
 import NavBar from './components/NavBar';
 

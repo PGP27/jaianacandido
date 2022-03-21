@@ -37,16 +37,35 @@ const About = () => (
       </div>
       <div className="mt-16 w-full flex-1 flex justify-center items-center">
         <div className="w-full lg:pl-28">
-          <Form
-            onSubmit={() => {}}
+          <form
+            action="https://formsubmit.co/psi.jaianacandido@gmail.com"
+            method="POST"
             className="w-full flex flex-col p-6 rounded-lg shadow-lg bg-orange-200"
           >
             <h2 className="mt-2 mb-8 text-center text-2xl">Mande sua mensagem!</h2>
-            <InputForm type="text" name="name" placeholder="Nome" />
-            <InputForm type="text" name="email" placeholder="Email" />
-            <InputForm type="textarea" name="message" placeholder="Mensagem..." />
+            <input
+              name="nome"
+              type="text"
+              required
+              placeholder="Nome"
+              className="my-2 ring-1 ring-slate-400 p-2 rounded-md outline-none focus:ring-sky-500"
+            />
+            <input
+              name="email"
+              type="email"
+              required
+              placeholder="Email"
+              className="my-2 ring-1 ring-slate-400 p-2 rounded-md outline-none focus:ring-sky-500"
+            />
+            <textarea
+              name="mensagem"
+              required
+              placeholder="Mensagem..."
+              rows={5}
+              className="resize-none my-2 ring-1 ring-slate-400 p-2 rounded-md outline-none focus:ring-sky-500"
+            />
             <button type="submit" className="my-2 py-2 px-4 rounded-full text-lg text-white transition bg-[#111155] hover:bg-[#333377]">Enviar</button>
-          </Form>
+          </form>
         </div>
       </div>
     </div>
