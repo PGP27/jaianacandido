@@ -5,7 +5,7 @@ import SessionTitle from "../SessionTitle";
 import LocationCard from "./components/LocationCard";
 
 const Locations = () => (
-  <div className="w-full bg-white flex flex-col items-center justify-center">
+  <div id="consultorios" className="w-full bg-white flex flex-col items-center justify-center">
     <SessionTitle title="Locais de atendimento" bgColor="bg-white" lineColor="bg-yellow-500" />
     <div className="max-w-[1536px] my-10 flex flex-col lg:flex-row">
       <LocationCard

@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 import './styles.css';
 
 const Publications = () => (
-  <div className="mb-10">
+  <div id="publicacoes" className="mb-10">
     <SessionTitle title="Publicações" bgColor="bg-white" lineColor="bg-green-600" />
     <div className="sm:hidden py-10 px-8 underline underline-offset-2">
       <ol>
