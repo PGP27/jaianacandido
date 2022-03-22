@@ -9,8 +9,3 @@ declare module "*.jpeg" {
 declare module "*.png" {
   export default "" as string;
 }
-
-declare module "*.svg" {
-  const content: any;
-  export default content;
-}
