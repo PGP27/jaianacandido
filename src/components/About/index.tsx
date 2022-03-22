@@ -1,6 +1,4 @@
-import { Form } from '@unform/web';
 import jaiana from '../../assets/jaiana.jpeg';
-import InputForm from '../InputForm';
 import SessionTitle from '../SessionTitle';
 
 const About = () => (
