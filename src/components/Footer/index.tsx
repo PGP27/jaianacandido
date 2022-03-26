@@ -14,7 +14,9 @@ const Footer = () => (
           <p className="my-2">Psicóloga clínica</p>
         </div>
       </div>
-      <button type="button" className="my-12 self-center lg:self-auto bg-emerald-700 text-white text-lg shadow-md rounded-full py-4 px-10 hover:opacity-75 transition">Agende sua sessão!</button>
+      <a href="https://api.whatsapp.com/send?phone=5585996401691" rel="noreferrer" target="_blank">
+        <button type="button" className="my-12 self-center lg:self-auto bg-emerald-700 text-white text-lg shadow-md rounded-full py-4 px-10 hover:opacity-75 transition">Agende sua sessão!</button>
+      </a>
       <div className="flex">
         <a
           href="https://www.instagram.com/psi.jaianacandido"

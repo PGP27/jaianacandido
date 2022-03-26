@@ -5,30 +5,30 @@ interface NavBarProps {
 };
 
 const NavBar = ({ cNavBar, cList, cButton }: NavBarProps) => (
-  <nav className={cNavBar}>
-    <ul className={cList}>
+  <div className={cNavBar}>
+    <div className={cList}>
         <a href="#sobre">
-          <li>
+          <div>
             <button type="button" className={cButton}>Sobre</button>
-          </li>
+          </div>
         </a>
         <a href="#consultorios">
-          <li>
+          <div>
             <button type="button" className={cButton}>Consultórios</button>
-          </li>
+          </div>
         </a>
         <a href="#publicacoes">
-          <li>
+          <div>
             <button type="button" className={cButton}>Publicações</button>
-          </li>
+          </div>
         </a>
         <a href="#sobre">
-          <li>
+          <div>
             <button type="button" className={cButton}>Contato</button>
-          </li>
+          </div>
         </a>
-    </ul>
-  </nav>
+    </div>
+  </div>
 );
 
 export default NavBar;
