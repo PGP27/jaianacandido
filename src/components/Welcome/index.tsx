@@ -31,7 +31,7 @@ const Welcome = () => (
           </a>
         </div>
       </div>
-      <div className="flex-1 h-full mb-20 lg:mb-0 flex-1 flex flex-col items-center justify-center">
+      <div className="flex-1 h-full mb-20 lg:mb-0 flex flex-col items-center justify-center">
         <img src={jaiana} alt="Jaiana Cândido" className="relative z-10 shadow-md w-[400px] rounded-full" />
         <div className="hidden absolute z-20 h-[400px] xl:w-[600px] xl:flex flex-col justify-between">
           <div className="h-16 w-16 rounded-full bg-fuchsia-300 self-end" />
