@@ -9,7 +9,7 @@ import './styles.css';
 
 const Publications = () => (
   <div id="publicacoes" className="mb-10">
-    <SessionTitle title="Publicações" bgColor="bg-white" lineColor="bg-green-600" />
+    <SessionTitle title="Publicações" bgColor="bg-white" lineColor="bg-fuchsia-400" />
     <div className="sm:hidden py-10 px-8 underline underline-offset-2">
       <ol>
         <li className="my-10">

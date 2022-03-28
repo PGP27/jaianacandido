@@ -11,7 +11,8 @@ const Footer = () => (
         />
         <div className="ml-4">
           <p className="text-2xl my-2">Jaiana Cândido</p>
-          <p className="my-2">Psicóloga clínica</p>
+          <p className="my-2">Psicóloga Clínica e da Saúde</p>
+          <p className="my-2">CRP 11/16744</p>
         </div>
       </div>
       <a href="https://api.whatsapp.com/send?phone=5585996401691" rel="noreferrer" target="_blank">

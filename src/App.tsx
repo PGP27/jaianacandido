@@ -6,7 +6,7 @@ import Publications from './components/Publications';
 import Footer from './components/Footer';
 
 const App = () => (
-  <div className="font-default text-base">
+  <div className="font-default text-base scroll-smooth">
     <Header />
     <Welcome />
     <Locations />
